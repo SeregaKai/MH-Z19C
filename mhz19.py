@@ -30,7 +30,7 @@ class TMHZ19(object):
         resp_len = 9
         resp = self.ser.read(resp_len)
         payload = list(resp)
-        print(f"payload = {payload}")
+#         print(f"payload = {payload}")
         if len(resp) != resp_len:
             raise self.TCommunicationError("expected %d bytes, got %d" % (resp_len, len(resp)))
 
